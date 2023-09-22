@@ -1,1 +1,15 @@
 // Заголовки, общие БЄМ блоки и проче...
+.button {
+    border-radius: 4px;
+    background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    text-transform: uppercase;
+    color: $text-color;
+    &__header {
+        padding: 20px;
+        &:hover {
+            background: linear-gradient(0deg, #1990a8 0%, #3aabc2 100%);
+        }
+    }
+}
