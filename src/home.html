@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="promo" style="background-image: url('img/hero/uber_bg.jpg');">
+				<div class="promo__container promo__wrapper">
+					<h1 class="promo__title">КОМПАНИЯ UBER PARTNERS!</h1>
+					<h2 class="promo__subtitle">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
+					<p class="promo__text">Компания UBER динамически развивающаяся. Компания на рынке
+						занимаетлидирующееместо средитаксомоторных компаний, Компания абсолютно прозрачная вы
+						можетеконтролировать всепроцессы у себя в личном кабинете. Бонуcная система.Помимо выполненной
+						работыпо заказам,компания начисляет бонусы запиковое время.</p>
+					<p class="promo__text">Мы одни из партнеров и зарекомендовалисебя как одна из лучших команд в
+						городеМоскве. Водители у насзарабатывают от 80000- 120000 вмесяц.</p>
+					<button class="button button__promo">ОТПРАВИТЬ ЗАЯВКУ!</button>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="advantages__container advantages__wrapper">
+					<p class="subtitle">преимущества</p>
+					<h2 class="title">8 причин начать работать с нами</h2>
+					<ul class="advantages__list">
+						<li class="advantages__item item">
+							<div class="item__img"><img src="img/advantages/cash.png" alt="cash"></div>
+							<div class="item__conent">
+								<h3 class="item__heading">Никаких наличных, оплата происходи тавтоматически</h3>
+								<p class="item__descr">Стоимостьпоездки оплачивается пассажиром с привязанной
+									банковскойкарты, т.е. нет никакихрисков связанных с перевозкой наличности как для
+									пассажира,так и для водителя, Вамне нужно искать мелкие деньги для размена.</p>
+							</div>
+						</li>
+						<li class="advantages__item item">
+							<div class="item__img"><img src="img/advantages/statistic.png" alt="statistic"></div>
+							<div class="item__conent">
+								<h3 class="item__heading">Комиссия 8% + БОНУСЫ</h3>
+								<p class="item__descr">У нас минимальная комиссия и мывыплачиваем бонусы за каждую
+									поездку, некоторые наши конкуренты оставляют бонусысебе. Мы работаем честно и с нами
+									водители зарабатывают больше!</p>
+							</div>
+						</li>
+						<li class="advantages__item item">
+							<div class="item__img"><img src="img/advantages/money.png" alt="money"></div>
+							<div class="item__conent">
+								<h3 class="item__heading">Высокий доход с гарантированными выплатами</h3>
+								<p class="item__descr">Мы выплачиваем
+									заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО,
+									ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение
+									банковского счета.</p>
+							</div>
+						</li>
+						<li class="advantages__item item">
+							<div class="item__img"><img src="img/advantages/date.png" alt="date"></div>
+							<div class="item__conent">
+								<h3 class="item__heading">Работа в удобное время, никакихграфиков</h3>
+								<p class="item__descr">Вы просто нажимаете
+									кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с
+									линии. Вы можете подраба-
+									тывать только утром, вечером, в выходные или праздничные дни!</p>
+							</div>
+						</li>
+						<li class="advantages__item item">
+							<div class="item__img"><img src="img/advantages/key.png" alt="key"></div>
+							<div class="item__conent">
+								<h3 class="item__heading">Комфортное, прозрачное и простое подключение</h3>
+								<p class="item__descr">Мы подключаем
+									дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам
+									копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2
+									дня Вы можете начинать работать!</p>
+							</div>
+						</li>
+						<li class="advantages__item item">
+							<div class="item__img"><img src="img/advantages/location.png" alt="location"></div>
+							<div class="item__conent">
+								<h3 class="item__heading">Всегда большое количество заказов</h3>
+								<p class="item__descr">Приложение показывает, где
+									на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не
+									будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно
+									неконфликтные люди, которых приятно возить.</p>
+							</div>
+						</li>
+						<li class="advantages__item item">
+							<div class="item__img"><img src="img/advantages/phone.png" alt="phone"></div>
+							<div class="item__conent">
+								<h3 class="item__heading">Круглосуточная поддержка</h3>
+								<p class="item__descr">В Uber действует круглосуточная поддержка водителей по
+									электронной
+									почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line
+									консультацию.</p>
+							</div>
+						</li>
+						<li class="advantages__item item">
+							<div class="item__img"><img src="img/advantages/car.png" alt="car"></div>
+							<div class="item__conent">
+								<h3 class="item__heading">Без шашечек и наклеек</h3>
+								<p class="item__descr">Вам не нужно менять цвет, устанавливать
+									«шашки» на автомобиль и обклеивать его наклейками.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

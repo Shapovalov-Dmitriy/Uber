@@ -6,10 +6,30 @@
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
     text-transform: uppercase;
     color: $text-color;
+    transition: all 0.5s ease 0s;
+    &:hover {
+        background: linear-gradient(0deg, #1990a8 0%, #3aabc2 100%);
+    }
     &__header {
         padding: 20px;
-        &:hover {
-            background: linear-gradient(0deg, #1990a8 0%, #3aabc2 100%);
-        }
     }
+    &__promo {
+        padding: rem(20) rem(35);
+        @include adaptiveValue("margin-top", 116, 73);
+    }
+}
+.subtitle {
+    font-size: rem(11);
+    text-transform: uppercase;
+    color: $text-color;
+    background-color: $black-color;
+    text-align: center;
+    display: inline-block;
+    padding: rem(10) rem(15);
+    @include adaptiveValue("margin-bottom", 33, 18);
+}
+.title {
+    @include adaptiveValue("font-size", 38, 16);
+    font-weight: 700;
+    margin-bottom: rem(20);
 }

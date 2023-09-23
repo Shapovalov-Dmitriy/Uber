@@ -1,0 +1,37 @@
+.promo {
+    // height: 100vh;
+    min-height: rem(800);
+    padding: rem(204) 0 rem(50);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__wrapper {
+        text-align: center;
+    }
+    &__title {
+        @include adaptiveValue("font-size", 60, 30);
+        font-weight: 900;
+        color: $text-color;
+        margin-bottom: rem(10);
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        @include adaptiveValue("font-size", 36, 20);
+        font-weight: 700;
+        color: $text-color;
+        margin-bottom: rem(16);
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 0 auto;
+        max-width: rem(985);
+        font-size: rem(18);
+        line-height: 1.2;
+        color: $text-color;
+        &:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+    }
+}

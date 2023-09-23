@@ -1,0 +1,50 @@
+.advantages {
+    padding-top: rem(20);
+    @include adaptiveValue("padding-bottom", 67, 38);
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @include adaptiveValue("column-gap", 70, 20);
+        row-gap: 25px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: rem(25);
+    }
+}
+
+.item {
+    &__img {
+        @include adaptiveValue("width", 116, 103);
+        @include adaptiveValue("height", 116, 103);
+        background-color: $blue-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    &__conent {
+        @include adaptiveValue("max-width", 368, 290);
+        text-align: left;
+    }
+
+    &__heading {
+        font-size: rem(16);
+        line-height: 1.2;
+        color: $blue-color;
+        margin-bottom: rem(5);
+    }
+
+    &__descr {
+        font-size: rem(15);
+        line-height: 1.2;
+    }
+}
